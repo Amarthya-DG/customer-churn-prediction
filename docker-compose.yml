@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  churn-prediction-api:
+    build: .
+    container_name: churn-prediction-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./plots:/app/plots
+    environment:
+      - PORT=5000
+    restart: unless-stopped
