@@ -45,7 +45,7 @@ This project implements a deep learning model for customer churn prediction, wit
    pip install -r requirements.txt
    ```
 
-3. Place your training and test datasets in the `data/` directory:
+3. Place your training in the `data/` directory:
    ```
    mkdir -p data
    # Copy your datasets to data/train_data.csv and data/test_data.csv
@@ -57,8 +57,8 @@ The customer churn datasets should be in CSV format with the following structure
 - A column named 'Churn' (target variable) with values 'Yes'/'No' or 1/0
 - Various customer features (demographic, usage, etc.)
 
-You can provide two separate datasets:
-1. `data/train_data.csv` - Used for training the model i used one one dataset and splited into training and testing
+You need to provide two separate datasets:
+1. `data/train_data.csv` - Used for training the model
 2. `data/test_data.csv` - Used for testing the model
 
 ## Quick Start
