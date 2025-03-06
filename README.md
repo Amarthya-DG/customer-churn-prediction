@@ -9,7 +9,6 @@ This project implements a deep learning model for customer churn prediction, wit
 ├── app.py                  # Flask API for model deployment
 ├── data/                   # Directory for data files
 │   ├── train_data.csv      # Training dataset
-│   └── test_data.csv       # Test dataset
 ├── Dockerfile              # Dockerfile for containerization
 ├── docker-compose.yml      # Docker Compose configuration
 ├── explain_model.py        # Script for model explainability using SHAP
