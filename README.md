@@ -212,6 +212,3 @@ The deep learning model consists of:
 
 SHAP (SHapley Additive exPlanations) is used to explain the model predictions. SHAP values represent the contribution of each feature to the prediction, providing both global and local interpretability.
 
-## License
-
-[MIT License](LICENSE) 
