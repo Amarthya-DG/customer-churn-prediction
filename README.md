@@ -9,7 +9,6 @@ This project implements a deep learning model for customer churn prediction, wit
 ├── app.py                  # Flask API for model deployment
 ├── data/                   # Directory for data files
 │   ├── train_data.csv      # Training dataset
-│   └── test_data.csv       # Test dataset
 ├── Dockerfile              # Dockerfile for containerization
 ├── docker-compose.yml      # Docker Compose configuration
 ├── explain_model.py        # Script for model explainability using SHAP
@@ -58,8 +57,8 @@ The customer churn datasets should be in CSV format with the following structure
 - A column named 'Churn' (target variable) with values 'Yes'/'No' or 1/0
 - Various customer features (demographic, usage, etc.)
 
-You need to provide two separate datasets:
-1. `data/train_data.csv` - Used for training the model
+You can provide two separate datasets:
+1. `data/train_data.csv` - Used for training the model i used one one dataset and splited into training and testing
 2. `data/test_data.csv` - Used for testing the model
 
 ## Quick Start
@@ -214,6 +213,3 @@ The deep learning model consists of:
 
 SHAP (SHapley Additive exPlanations) is used to explain the model predictions. SHAP values represent the contribution of each feature to the prediction, providing both global and local interpretability.
 
-## License
-
-[MIT License](LICENSE) 
